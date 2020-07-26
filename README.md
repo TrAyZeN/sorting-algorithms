@@ -2,7 +2,7 @@
     sorting-algorithms
 </h1>
 
-> Sorting algorithms implementation in Rust
+> Sorting algorithms implementation and visualization in Rust
 
 ## Comparison of sorting algorithms
 ### Complexity
@@ -34,7 +34,23 @@ The following metrics were captured with an Intel Core i5 4590.
 ## Install
 ```
 git clone https://github.com/TrAyZeN/sorting-algorithms
-cd sorting-algorithms
+```
+
+## Usage
+
+### Run visualization
+```
+cargo run
+```
+
+### Run benchmarks
+```
+cargo bench
+```
+
+### Run tests
+```
+cargo test
 ```
 
 ## License
