@@ -15,16 +15,18 @@ In the following table n is the number of record to be sorted.
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)    | n        | n²       | n²       | 1      |
 | [Shaker Sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort) | n        | n²       | n²       | 1      |
 | [Gnome Sort](https://en.wikipedia.org/wiki/Gnome_sort)            | n        | n²       | n²       | 1      |
+| [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)            | n*log(n) | n*log(n) | n*log(n) | n      |
 
 ### Benchmark
 The following metrics were captured with an Intel Core i5 4590.
-| Name           | 100 entries | 1000 entries | 10000 entries | 100000 entries |
-|----------------|-------------|--------------|---------------|----------------|
-| Bubble Sort    | 6.5944 us   | 723.26 us    | 105.94 ms     | 13.917 s       |
-| Selection Sort | 4.4945 us   | 434.07 us    | 39.318 ms     | 3.9262 s       |
-| Insertion Sort | 2.5376 us   | 211.77 us    | 20.680 ms     | 1.9795 s       |
-| Shaker Sort    | 4.1071 us   | 766.16 us    | 88.224 ms     | 10.509 s       |
-| Gnome Sort     | 5.5956 us   | 591.39 us    | 54.595 ms     | 5.4465 s       |
+| Name           | 10000 entries | 100000 entries |
+|----------------|---------------|----------------|
+| Bubble Sort    | 115.39 ms     | 14.346 s       |
+| Selection Sort | 39.694 ms     | 3.8699 s       |
+| Insertion Sort | 14.960 ms     | 1.4587 s       |
+| Shaker Sort    | 125.24 ms     | 12.766 s       |
+| Gnome Sort     | 58.121 ms     | 5.4517 s       |
+| Merge Sort     | 3.1771 ms     | 29.921 ms      |
 
 ## Requirements
 - [Rust](https://www.rust-lang.org/)
