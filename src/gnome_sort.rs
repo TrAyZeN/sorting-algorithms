@@ -8,8 +8,8 @@
  *
  * Space complexity: O(1)
  */
-pub fn sort<T: Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
-    let mut result = arr.clone();
+pub fn sort<T: Clone + Ord + PartialOrd>(arr: &[T]) -> Vec<T> {
+    let mut result = arr.to_owned();
 
     let mut i = 0;
     while i < result.len() {
@@ -37,5 +37,5 @@ fn reversed() {
 
 #[test]
 fn shuffled() {
-    assert_eq!(sort(&vec![5, 1, 6, 4, 2, 4]), vec![1, 2, 3, 4, 5, 6]);
+    assert_eq!(sort(&vec![5, 1, 6, 4, 2, 3]), vec![1, 2, 3, 4, 5, 6]);
 }
