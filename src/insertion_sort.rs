@@ -14,8 +14,8 @@ pub fn sort<T: Copy + Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
     for i in 1..result.len() {
         let mut j = i;
         let v = result[i];
-        while j > 0 && result[j-1] > v {
-            result[j] = result[j-1];
+        while j > 0 && result[j - 1] > v {
+            result[j] = result[j - 1];
             j -= 1;
         }
         result[j] = v;

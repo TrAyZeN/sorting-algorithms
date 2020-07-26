@@ -14,9 +14,9 @@ pub fn sort<T: Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
     for i in 0..result.len() {
         let mut swapped = false;
 
-        for j in 0..result.len()-i-1 {
-            if result[j] > result[j+1] {
-                result.swap(j, j+1);
+        for j in 0..result.len() - i - 1 {
+            if result[j] > result[j + 1] {
+                result.swap(j, j + 1);
                 swapped = true;
             }
         }

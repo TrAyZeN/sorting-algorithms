@@ -14,17 +14,17 @@ pub fn sort<T: Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
     for i in 0..result.len() {
         let mut swapped = false;
 
-        if i%2 == 0 {
-            for j in i/2..result.len()-1-i/2 {
-                if result[j] > result[j+1] {
-                    result.swap(j, j+1);
+        if i % 2 == 0 {
+            for j in i / 2..result.len() - 1 - i / 2 {
+                if result[j] > result[j + 1] {
+                    result.swap(j, j + 1);
                     swapped = true;
                 }
             }
         } else {
-            for j in (i/2+1..result.len()-1-i/2).rev() {
-                if result[j-1] > result[j] {
-                    result.swap(j, j-1);
+            for j in (i / 2 + 1..result.len() - 1 - i / 2).rev() {
+                if result[j - 1] > result[j] {
+                    result.swap(j, j - 1);
                     swapped = true;
                 }
             }

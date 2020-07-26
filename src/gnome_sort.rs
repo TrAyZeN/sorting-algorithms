@@ -13,10 +13,10 @@ pub fn sort<T: Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
 
     let mut i = 0;
     while i < result.len() {
-        if i == 0 || result[i] >= result[i-1] {
+        if i == 0 || result[i] >= result[i - 1] {
             i += 1;
         } else {
-            result.swap(i, i-1);
+            result.swap(i, i - 1);
             i -= 1;
         }
     }

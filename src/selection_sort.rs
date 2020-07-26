@@ -14,7 +14,7 @@ pub fn sort<T: Clone + Ord + PartialOrd>(arr: &Vec<T>) -> Vec<T> {
     for i in 0..result.len() {
         let mut min = i;
 
-        for j in i+1..result.len() {
+        for j in i + 1..result.len() {
             if result[j] < result[min] {
                 min = j;
             }
